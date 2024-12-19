@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*
+“Start your week strong!” for Monday.
+“Keep going!” for Tuesday.
+“Halfway there!” for Wednesday.
+“Almost the weekend!” for Thursday.
+“Happy Friday!” for Friday.
+“Enjoy your weekend!” for Saturday and Sunday.
+*/
+let day=prompt("enter a day");
+
+ if(day=="monday"){
+    console.log("Start your week strong!");
+}
+else if(day=="tuesday"){
+    console.log("Keep going!");
+ }
+ else if(day=="wednesday"){
+    console.log("Halfway there!");
+}
+else if(day=="thursday"){
+    console.log("Almost the weekend!");
+}
+ else if(day=="friday"){
+     console.log("Happy friday");
+}
+ else if(day=="saturday"){
+    console.log("Enjoy your weekend!");
+ }
+else if(day=="sunday"){
+    console.log("Enjoy your weekend!");
+ }
+ else{
+    console.log("invalid");
+}
+
+// /*“Stop” if the light is red.
+// “Get Ready” if the light is yellow.
+// “Go” if the light is green.
+// Task:
+
+// */
+
+ let b=prompt("enter a color");
+ if(b=="red"){
+    console.log("stop");
+ }
+ else if(b=="yellow"){
+console.log("Get rerady");
+ }
+ else if(b=="Green"){
+     console.log("Go");
+ }
+ else{
+    console.log("hii");
+ }
+// /*“No discount” if the amount is less than $50.
+// “5% discount” if the amount is between $50 and $100.
+// “10% discount” if the amount is between $101 and $200.
+// “15% discount” if the amount is above $200.*/
+   
+
+ let amount=+prompt("enter a amount");
+if(amount<=50){
+    console.log("No discount");
+ }
+else if(amount>=50&&amount<=100){
+console.log("5% discount");
+}
+ else if(amount>=101&&amount<=200){
+   console.log("10% discount");
+
+ }
+ else if(amount>200){
+    console.log("15% discount");
+}
+else{
+    console.log("Not applicable");
+ }
+
+
+/*(e.g.,  "Biriyani", "shawarma", "Fried rice", "veg pula").
+Print the price.
+*/
+
+ let dish=prompt("enter a dish name");
+switch(dish){
+   case "Biriyani":
+        console.log("250");
+        break;
+   case "shawarma":
+        console.log("150");
+         break;
+     case "Friedrice":
+            console.log("100");
+         break;
+     case "vegpulav":
+        console.log("230");
+        break;
+   default:
+       console.log("depends on selected dish");
+
+}
+/*Assume variables num1 and num2 hold two numbers, and operator holds the arithmetic operator as a string (e.g., “+”).
+Use a switch case statement to perform the operation and store the result in a variable result.
+Print the result.*/
+
+let num1=+prompt("enter a value");
+ let num2=+prompt("enter b value");
+ let opp=prompt("enter a operator");
+ switch(opp){
+    case '+':
+        console.log(num1+num2);
+        break;
+    case '-':
+        console.log(num1-num2); 
+        break; 
+    case '*':
+        console.log(num1*num2);
+        break;
+    case '%':
+        console.log(num1%num2);
+        break;
+    case '/':
+        console.log(num1/num2);
+        break;
+    default:
+        console.log("invalid operator");
+ }
+</script>
+</body>
+</html>
